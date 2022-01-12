@@ -9,6 +9,8 @@ body {
   width: 100vw;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
+  overflow-y: overlay;
 }
 
 code {

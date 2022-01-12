@@ -5,7 +5,11 @@ import { List } from "./components/list/list";
 function App() {
   return (
     <div className="App">
-      <div className="App-header">투두리스트</div>
+      <div className="App-header">
+        <img src="/images/logo.png" alt="logo" />
+        todos
+        <img src="/images/logo.png" alt="logo" />
+      </div>
       <Add />
       <List />
     </div>
