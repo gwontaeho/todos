@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-        <img src="/images/logo.png" alt="logo" />
+        <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="logo" />
         todos
-        <img src="/images/logo.png" alt="logo" />
+        <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="logo" />
       </div>
       <Add />
       <List />

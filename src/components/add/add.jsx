@@ -31,6 +31,13 @@ export const Add = () => {
     setText("");
   }, [text]);
 
+  const onKeyPress = useCallback(
+    (e) => {
+      if (e.key === "Enter") onClickAdd();
+    },
+    [onClickAdd]
+  );
+
   return (
     <div className="Add">
       <input
@@ -39,6 +46,7 @@ export const Add = () => {
         value={text}
         onChange={onChangeText}
         maxLength={20}
+        onKeyPress={onKeyPress}
       />
       <div className="Add-button" onClick={onClickAdd}>
         추가
